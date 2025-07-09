@@ -1,8 +1,10 @@
-
-const Person = ({ numbers }) => {
-    console.log(numbers)
+const Person = ({ person, handleDelete }) => {
+    console.log(person)
     return(
-        <p>{numbers.name} {numbers.number}</p>
+        <div>
+            {person.name}{person.number}
+            <button onClick={handleDelete}>delete</button>
+        </div>
     )
 }
 
