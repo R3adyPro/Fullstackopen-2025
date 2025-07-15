@@ -16,12 +16,14 @@ const App = () => {
 
   useEffect(() => {
     console.log('effect')
+    console.log(persons)
     personServises
       .getALl()
       .then(initialPersons => {
-        setPersons(initialPersons)
+        setPersons(initialPersons), console.log('testi', initialPersons)
       })
   },[])
+
 
   const personToShow = showAll
     ? persons

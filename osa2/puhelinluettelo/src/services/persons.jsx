@@ -1,8 +1,9 @@
 import axios from 'axios'
-const baseUrl = 'api/persons'
+const baseUrl = '/api/persons'
 
 const getALl = () => {
     const request = axios.get(baseUrl)
+    console.log(request, request.data)
     return request.then(response => response.data)
 }
 
