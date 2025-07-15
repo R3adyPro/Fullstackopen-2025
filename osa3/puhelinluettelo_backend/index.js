@@ -41,6 +41,10 @@ const generateId = () => {
     )
 }
 
+app.get('/', (request, response) => {
+    response.send('<p>Hello</p>')
+})
+
 app.get('/api/persons', (request, response) => {
     response.json(persons)
 })
